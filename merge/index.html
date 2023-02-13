@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="stylesheet.css">
-		<script src="data.js"></script>
-		<script src="generator.js"></script>
-	</head>
-	<body>
-		<!-- 'generate' button -->
-		<button class="button" onclick="generate()">Generate Idea</button>
+<head>
+  <title>Random Game Element Generator</title>
+  <style>
+    /* Add your CSS styles here */
+    table {
+      border-collapse: collapse;
+      margin: auto;
+    }
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    button {
+      display: block;
+      margin: auto;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Game Element Generator</h1>
+  <table id="game-elements">
+    <!-- 8 rows -->
+    <tr>
+      <!-- 5 columns -->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Repeat 7 more times -->
+  </table>
+  <button id="generate-button">Generate</button>
+  <script>
+    // Add your JavaScript code here
+    const generateButton = document.getElementById("generate-button");
+    const gameElements = document.getElementById("game-elements");
 
-		<!-- generated idea text -->
-		<div class = "prompt" id = "content">
-			<p>. . .</p>
-		</div>
-
-		<!-- yt channel link -->
-		<div class = "social">
-			<a target="_blank" href="https://www.youtube.com/c/SebastianLague"><img src="Resources/ytbanner.png" width="200" height="50" title="YouTube channel" alt="YouTube channel"></a>
-		</div>
-	</body>
+    generateButton.addEventListener("click", function() {
+      // Your code to generate the random combination of game elements here
+    });
+  </script>
+</body>
 </html>
